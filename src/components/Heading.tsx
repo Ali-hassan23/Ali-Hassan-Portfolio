@@ -36,7 +36,7 @@ const Heading = ({ heading }: HeadingProps) => {
           {heading}
         </motion.h1>
         <motion.div
-          className="w-48 z-0 bg-yellow-500 h-4 bottom-0 mt-3 ml-4 absolute"
+          className="w-48 z-0 bg-yellow-400 h-4 bottom-0 mt-3 ml-4 absolute bg-opacity-75"
           initial={{ x: "-100%", opacity: 0 }}
           animate={controls}
           transition={{ duration: 0.7 }}
