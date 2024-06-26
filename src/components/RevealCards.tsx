@@ -30,7 +30,7 @@ const RevealCard = ({ children, width = "fit-contnet", index }: Props) => {
       <motion.div
         initial={{ opacity: 0, x: even ? 100 : -100 }}
         animate={controls}
-        transition={{ duration: 0.4, ease: "easeInOut" }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
       >
         {children}
       </motion.div>

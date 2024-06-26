@@ -14,7 +14,7 @@ const AboutPage = () => {
           <Reveal>
             <div className="flex flex-col gap-7 my-9 text-center">
               <p className="text-sm sm:text-lg z-10 p-3">
-                Hi there! I'm Ali Hassan, a passionate and dedicated web
+                Hi there! I&apos;m Ali Hassan, a passionate and dedicated web
                 developer with expertise in the MERN stack (MongoDB, Express.js,
                 React, and Node.js) and various other database technologies.
                 With a strong foundation in both front-end and back-end
@@ -25,7 +25,7 @@ const AboutPage = () => {
                 communication. I believe that the best applications are built
                 through clear and continuous dialogue, ensuring that the final
                 product aligns perfectly with client needs and user
-                expectations. Whether it's crafting sleek, responsive interfaces
+                expectations. Whether it&apos;s crafting sleek, responsive interfaces
                 or architecting robust server-side solutions, I bring creativity
                 and precision to every project I undertake.
               </p>
