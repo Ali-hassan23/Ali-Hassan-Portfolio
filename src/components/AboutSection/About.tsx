@@ -6,7 +6,7 @@ import Heading from "../Heading";
 const AboutPage = () => {
   return (
     <div className="w-full h-full flex flex-col relative">
-      <h1 className="mt-7"><Heading heading="About Me" /></h1>
+      <h1 className="mt-16"><Heading heading="About Me" /></h1>
       
       <div className="relative flex sm:w-[85%] w-full mx-auto flex-col gap-5">
         <div className="sm:w-72 w-32 sm:h-36 h-20 bg-dot-white/[0.5] absolute mt-10 z-0"></div>
