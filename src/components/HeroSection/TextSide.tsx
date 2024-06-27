@@ -3,6 +3,7 @@ import Reveal from "../Reveal";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import SocialLinks from "../SocialLinks";
 
 const TextSide = () => {
   const [text] = useTypewriter({
@@ -40,17 +41,7 @@ const TextSide = () => {
               Learn More
             </button>
           </div>
-          <div className="flex gap-4">
-            <Link href="https://github.com/Ali-hassan23">
-              <FaGithub size={35} />
-            </Link>
-            <Link href="https://www.linkedin.com/in/ali-hassan-03b930224/">
-              <FaLinkedin size={35} />
-            </Link>
-            <Link href="mailto:alihassan060104@gmail.com">
-              <FaEnvelope size={35} />
-            </Link>
-          </div>
+          <SocialLinks />
         </section>
       </Reveal>
     </div>

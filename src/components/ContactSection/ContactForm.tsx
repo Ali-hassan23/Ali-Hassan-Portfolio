@@ -4,19 +4,22 @@ import { Label } from "../ui/label";
 import { Input } from "../ui/input";
 import { cn } from "@/lib/utils";
 
-
 export function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
   };
+
   return (
-    <div className="rounded-none md:rounded-2xl px-10 py-4 shadow-input bg-white dark:bg-black sm:w-[80%] w-[70%] mx-auto">
+    <div className="rounded-none md:rounded-2xl px-10 py-4 drop-shadow-2xl bg-white dark:bg-zinc-900 hover:scale-105 duration-200 sm:w-[80%] w-[70%] mx-auto">
       <h2 className="font-bold text-xl text-center text-neutral-800 dark:text-neutral-200">
         Contact Me
       </h2>
 
-      <form className="flex flex-col items-center justify-center mt-4" onSubmit={handleSubmit}>
+      <form
+        className="flex flex-col items-center justify-center mt-4"
+        onSubmit={handleSubmit}
+      >
         <LabelInputContainer className="sm:mb-4 mb-2">
           <Label htmlFor="firstname">Your Name</Label>
           <Input id="firstname" placeholder="John Doe" type="text" />
@@ -28,7 +31,11 @@ export function ContactForm() {
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
-          <textarea id="message" placeholder="What you wanna talk about ?" className="w-full h-28 p-3 border text-sm border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:focus:ring-neutral-600 dark:bg-zinc-800 dark:text-white dark:placeholder-text-neutral-600"/>
+          <textarea
+            id="message"
+            placeholder="What you wanna talk about?"
+            className="w-full h-28 p-3 border text-sm border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:focus:ring-neutral-600 dark:bg-zinc-800 dark:text-white dark:placeholder-text-neutral-600"
+          />
         </LabelInputContainer>
 
         <button

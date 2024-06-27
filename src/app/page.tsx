@@ -1,8 +1,6 @@
 "use client";
 import HeroSection from "@/components/HeroSection/HeroSection";
-import Sidebar from "@/components/Sidebar";
-import { FaArrowDown } from "react-icons/fa";
-import { easeIn, motion } from "framer-motion";
+import { FaArrowDown, FaPalette, FaServicestack } from "react-icons/fa";
 import About from "@/components/AboutSection/About";
 import ProjectPage from "@/components/ProjectSection/ProjectPage";
 import ContactPage from "@/components/ContactSection/ContactPage";
@@ -11,8 +9,11 @@ import {
   IconHome,
   IconMessage,
   IconPackage,
+  IconTool,
   IconUser,
 } from "@tabler/icons-react";
+import Footer from "@/components/Footer";
+import SkillsPage from "@/components/SkillsSection/SkillsPage";
 
 export default function Home() {
   const handleScroll = () => {
@@ -28,6 +29,11 @@ export default function Home() {
       name: "About",
       link: "#about",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Services",
+      link: "#services",
+      icon: <IconTool className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Projects",
@@ -55,6 +61,9 @@ export default function Home() {
         <div id="about" className="min-h-[100vh]">
           <About />
         </div>
+        <div id="services" className="min-h-[100vh] mb-14 sm:mb-0">
+          <SkillsPage />
+        </div>
         <div id="projects" className="min-h-[100vh]">
           <ProjectPage />
         </div>
@@ -71,14 +80,7 @@ export default function Home() {
         </button>
       </div>
       <FloatingNav navItems={navItems} />
-      {/* <motion.nav
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, ease: easeIn }}
-          className="fixed right-2 top-1/2 transform -translate-y-1/2"
-        >
-          <Sidebar />
-        </motion.nav> */}
+      <Footer />
     </div>
   );
 }

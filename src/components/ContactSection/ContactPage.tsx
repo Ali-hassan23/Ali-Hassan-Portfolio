@@ -17,18 +17,17 @@ const ContactPage = () => {
         x: 0,
       });
     }
-  });
+  }, [inView, controls]);
 
   return (
     <div>
       <div className="my-5">
         <Heading heading="Contact Me" />
       </div>
-      <div className="relative flex flex-col items-center justify-center mt-10 sm:mt-5">
-        <div className="max-w-4xl h-full absolute mx-auto flex justify-center items-center z-0 mt-5">
+      <div className="relative sm:w-[80%] w-full h-full mx-auto flex flex-row items-center mt-10 sm:mt-5">
+        <div className="absolute inset-0 sm:flex hidden w-full justify-end z-0">
           <WaterDropGrid />
         </div>
-
         <motion.div
           ref={ref}
           initial={{ x: "-100%", opacity: 0 }}
