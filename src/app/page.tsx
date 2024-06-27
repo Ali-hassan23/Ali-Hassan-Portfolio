@@ -52,7 +52,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative overflow-hidden scroll-smooth">
+    <div className="relative overflow-hidden scroll-smooth bg-gray-800 text-neutral-content">
       <main>
         <div id="home">
           <HeroSection />

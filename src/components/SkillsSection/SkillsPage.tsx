@@ -9,7 +9,9 @@ import RevealCard from "../RevealCards";
 const SkillsPage = () => {
   return (
     <div>
-      <h1 className="mb-12 sm:mb-0"><Heading heading="What I Can Do?" /></h1>
+      <h1 className="mb-12 sm:mb-0">
+        <Heading heading="What I Can Do?" />
+      </h1>
       <div className="flex flex-col sm:flex-row gap-5 w-[80%] mx-auto my-4">
         <RevealCard index={0}>
           <div className="max-w-md mx-auto sm:h-52 h-auto bg-zinc-900 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
