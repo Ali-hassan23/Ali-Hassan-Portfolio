@@ -28,7 +28,7 @@ export function ContactForm() {
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
-          <textarea id="message" placeholder="What you wanna talk about ?" className="w-full h-28 p-3 border text-sm sm:text-lg border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:focus:ring-neutral-600 dark:bg-zinc-800 dark:text-white dark:placeholder-text-neutral-600"/>
+          <textarea id="message" placeholder="What you wanna talk about ?" className="w-full h-28 p-3 border text-sm border-gray-300 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-neutral-400 dark:focus:ring-neutral-600 dark:bg-zinc-800 dark:text-white dark:placeholder-text-neutral-600"/>
         </LabelInputContainer>
 
         <button

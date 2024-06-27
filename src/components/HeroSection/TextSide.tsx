@@ -2,6 +2,7 @@ import React from "react";
 import Reveal from "../Reveal";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Link from "next/link";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const TextSide = () => {
   const [text] = useTypewriter({
@@ -24,7 +25,9 @@ const TextSide = () => {
             <p className="text-3xl sm:text-5xl font-bold">MY NAME IS HASSAN</p>
             <h1 className="text-2xl font-semibold">
               I am a{" "}
-              <span className="text-yellow-500 font-bold sm:text-3xl text-2xl">{text}</span>
+              <span className="text-yellow-500 font-bold sm:text-3xl text-2xl">
+                {text}
+              </span>
               <Cursor cursorStyle="_" />
             </h1>
           </div>
@@ -36,6 +39,17 @@ const TextSide = () => {
             <button className="sm:px-6 px-5 sm:py-2 py-1 font-medium bg-indigo-500 text-white w-fit transition-all shadow-[3px_3px_0px_black] hover:shadow-none hover:translate-x-[3px] hover:translate-y-[3px]">
               Learn More
             </button>
+          </div>
+          <div className="flex gap-4">
+            <Link href="https://github.com/Ali-hassan23">
+              <FaGithub size={35} />
+            </Link>
+            <Link href="https://www.linkedin.com/in/ali-hassan-03b930224/">
+              <FaLinkedin size={35} />
+            </Link>
+            <Link href="mailto:alihassan060104@gmail.com">
+              <FaEnvelope size={35} />
+            </Link>
           </div>
         </section>
       </Reveal>
